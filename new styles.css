@@ -1,0 +1,272 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.questions {
+  color: #686868;
+}
+
+.description {
+  font-size: 18px;
+  font-family: Calibri;
+  color: #1b1b1b;
+}
+
+.dark {
+  float: center;
+  padding: 15px;
+  background: #35424a;
+  color: #c4c4c4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  color: black;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: black 5px solid;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #brand {
+  float: left;
+}
+
+header #brand h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .selected a {
+  color: grey;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #545454;
+}
+
+#showcase {
+  min-height: 400px;
+  background: url("images/show.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+#subscription {
+  padding: 15px;
+  color: white;
+  background: #b8b8b8;
+}
+
+#subscription h1 {
+  float: left;
+}
+
+#subscription form {
+  float: right;
+  margin-top: 15px;
+}
+
+#subscription input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+.button1 {
+  height: 38px;
+  background: white;
+  border: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+}
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#imgbox {
+  border-radius: 15px;
+  border: 2px solid grey;
+}
+
+article#main-col {
+  float: center;
+  width: 65%;
+}
+
+.productbox {
+  width: 300px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.slide-img {
+  height: 450px;
+}
+
+.slide-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.slide-img :hover {
+  visibility: visible;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.type a {
+  text-decoration: none;
+  color: black;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+.text span {
+  color: grey;
+}
+
+.price {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  left: 0;
+}
+
+.contact {
+  float: center;
+  width: 80%;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  background-color: #545454;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header #brand,
+  header nav,
+  header nav li,
+  #subscription h1,
+  #subscription form,
+  #boxes .box,
+  article#main-col,
+  .productbox {
+    float: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #subscription button {
+    display: block;
+    width: 100%;
+  }
+
+  #subscription form input[type="email"],
+  .contact input,
+  .contact textarea,
+  .contact label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
